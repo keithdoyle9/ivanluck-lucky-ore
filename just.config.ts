@@ -9,8 +9,7 @@ import {
   coreLint,
   mcaddonTask,
   setupEnvironment,
-  ZipTaskParameters,
-  getOrThrowFromProcess
+  ZipTaskParameters
 } from "@minecraft/core-build-tasks";
 import { execFileSync } from "child_process";
 import fs from "fs";
@@ -18,7 +17,11 @@ import path from "path";
 
 setupEnvironment(path.resolve(__dirname, ".env"));
 
-const projectName = getOrThrowFromProcess("PROJECT_NAME");
+process.env.PROJECT_NAME ||= "ivanluck";
+process.env.MINECRAFT_PRODUCT ||= "BedrockGDK";
+process.env.CUSTOM_DEPLOYMENT_PATH ||= "";
+
+const projectName = process.env.PROJECT_NAME ?? "ivanluck";
 const behaviorPackSource = path.resolve(__dirname, `behavior_packs/${projectName}`);
 const resourcePackSource = path.resolve(__dirname, `resource_packs/${projectName}`);
 const stagedRoot = path.resolve(__dirname, "dist/server");
