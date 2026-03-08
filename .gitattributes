@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.png binary
+*.mcaddon binary
+*.mcpack binary
+

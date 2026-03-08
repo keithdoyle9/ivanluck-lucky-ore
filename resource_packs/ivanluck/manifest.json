@@ -1,0 +1,25 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Ivanluck Lucky Ore",
+    "description": "Lucky ore resource pack with textures and localization.",
+    "uuid": "C27EA254-250B-4640-8E08-36F6195290BD",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 21, 60]
+  },
+  "modules": [
+    {
+      "description": "Ivanluck Lucky Ore resources",
+      "type": "resources",
+      "uuid": "ED7A4773-F728-4D65-AF5A-C3BDFBB1348F",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "C33CEE03-8A8F-4DCB-BCE6-CA5452C41D6E",
+      "version": [1, 0, 0]
+    }
+  ]
+}
+

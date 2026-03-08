@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.40",
+  "ivanluck:lucky_ore": {
+    "textures": {
+      "up": "lucky_ore",
+      "down": "lucky_ore",
+      "north": "lucky_ore",
+      "south": "lucky_ore",
+      "east": "lucky_ore",
+      "west": "lucky_ore"
+    },
+    "carried_textures": "lucky_ore",
+    "isotropic": true,
+    "ambient_occlusion_exponent": 1,
+    "sound": "stone"
+  }
+}
+

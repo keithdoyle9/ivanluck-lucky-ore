@@ -1,0 +1,49 @@
+{
+  "name": "ivanluck-lucky-ore",
+  "version": "0.1.0",
+  "productName": "Ivanluck Lucky Ore",
+  "description": "Minecraft Bedrock lucky ore add-on for Bedrock 26.1.x",
+  "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keithdoyle9/ivanluck-lucky-ore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/keithdoyle9/ivanluck-lucky-ore/issues"
+  },
+  "homepage": "https://github.com/keithdoyle9/ivanluck-lucky-ore#readme",
+  "keywords": [
+    "minecraft",
+    "minecraft-bedrock",
+    "bedrock-addon",
+    "bedrock-dedicated-server",
+    "mcaddon",
+    "typescript"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "assets": "node tools/generate_textures.mjs",
+    "ci": "npm run lint && npm run mcaddon",
+    "lint": "just-scripts lint",
+    "build": "just-scripts build",
+    "clean": "just-scripts clean",
+    "stage-server": "just-scripts stage-server",
+    "mcaddon": "just-scripts mcaddon",
+    "deploy:bedrock": "node tools/deploy_bedrock_server.mjs"
+  },
+  "devDependencies": {
+    "@minecraft/core-build-tasks": "^5.5.0",
+    "@typescript-eslint/eslint-plugin": "^8.46.1",
+    "@typescript-eslint/parser": "^8.46.1",
+    "eslint-plugin-minecraft-linting": "^2.0.2",
+    "source-map": "^0.7.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "@minecraft/server": "^1.17.0"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ivanluck:lucky_ore_recipe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["GEG", "EDE", "GEG"],
+    "key": {
+      "G": {
+        "item": "minecraft:gold_block"
+      },
+      "E": {
+        "item": "minecraft:emerald_block"
+      },
+      "D": {
+        "item": "minecraft:diamond_block"
+      }
+    },
+    "unlock": [
+      {
+        "item": "ivanluck:lucky_ore"
+      }
+    ],
+    "result": {
+      "item": "ivanluck:lucky_ore",
+      "count": 1
+    }
+  }
+}
+

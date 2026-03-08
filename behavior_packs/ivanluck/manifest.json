@@ -1,0 +1,37 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Ivanluck Lucky Ore",
+    "description": "Lucky ore behavior pack with world generation, rewards, and bad-luck events.",
+    "uuid": "C33CEE03-8A8F-4DCB-BCE6-CA5452C41D6E",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 21, 60]
+  },
+  "modules": [
+    {
+      "description": "Ivanluck Lucky Ore data",
+      "version": [1, 0, 0],
+      "uuid": "619DB0D3-D4EB-4345-AD67-E55A3D9FD5C4",
+      "type": "data"
+    },
+    {
+      "description": "Ivanluck Lucky Ore scripts",
+      "language": "javascript",
+      "type": "script",
+      "uuid": "79AAD759-32B2-4CD5-9AFA-3696A878A34C",
+      "version": [1, 0, 0],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "C27EA254-250B-4640-8E08-36F6195290BD",
+      "version": [1, 0, 0]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": [1, 17, 0]
+    }
+  ]
+}
+

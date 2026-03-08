@@ -1,0 +1,40 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:block": {
+    "description": {
+      "identifier": "ivanluck:lucky_ore",
+      "menu_category": {
+        "category": "nature"
+      }
+    },
+    "components": {
+      "minecraft:collision_box": true,
+      "minecraft:selection_box": true,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2.5
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 12
+      },
+      "minecraft:display_name": "Lucky Ore",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:item_visual": {
+        "geometry": "minecraft:geometry.full_block",
+        "material_instances": {
+          "*": {
+            "texture": "lucky_ore",
+            "render_method": "opaque"
+          }
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "lucky_ore",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:map_color": "#cfb134",
+      "minecraft:loot": "loot_tables/blocks/lucky_ore.json"
+    }
+  }
+}
